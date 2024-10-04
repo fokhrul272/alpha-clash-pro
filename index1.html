@@ -76,28 +76,30 @@
 
               <!-- score -->
               <div class=" flex justify-between w-3/4">
+                <!-- display life -->
                 <button class="btn rounded-full bg-purple-300 px-4">
                     life
                     <img src="images/heart.svg" alt="">
-                    <span>1</span>
+                    <span id="current-life">5</span>
                   </button>
+                  <!-- display score -->
                   <button class="btn rounded-full bg-purple-300 px-4">
                     score
                     <img src="images/dollor.svg" alt="">
-                    <span>1</span>
+                    <span id="current-score">0</span>
                   </button>
               </div>
         </div>
     </section>
     <!-- final score -->
-    <section class="score hidden min-h-screen flex justify-center items-center text-center">
+    <section id="final-score" class="hidden min-h-screen flex justify-center items-center text-center">
         <div class="space-y-5 bg-[#FFFFFF33] rounded-lg p-4">
             <h1 class="text-xl">Game Over!</h1>
             <h3>
                 <span class="text-8xl font-bold ">score:</span>
-                <span class="text-8xl">14</span>
+                <span id="last-score" class="text-8xl">14</span>
             </h3>
-            <button class="btn">Play Again</button>
+            <button onclick="play()" class="btn">Play Again</button>
             <p>Practice will make you Pro</p>
         </div>
 
